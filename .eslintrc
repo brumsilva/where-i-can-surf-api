@@ -4,9 +4,17 @@
   "plugins": [
     "@typescript-eslint"
   ],
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
   "extends": [
     "eslint:recommended",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended"
-  ]
+  ],
+  "rules": {
+    "@typescript-eslint/no-var-requires": 0
+  }
 }
